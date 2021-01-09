@@ -1,0 +1,68 @@
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe.config
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\bin\Debug\QlyBDS.pdb
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csprojAssemblyReference.cache
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.Properties.Resources.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.GenerateResource.cache
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.CoreCompileInputs.cache
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.exe
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.pdb
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fLogin.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fRegister.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fManager.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyCustomer.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fAddCustomer.resources
+D:\DoAnHQTCSDL\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyProduct.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe.config
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.pdb
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csprojAssemblyReference.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyCustomer.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fAddCustomer.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fManager.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fLogin.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyProduct.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fRegister.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.Properties.Resources.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.GenerateResource.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.CoreCompileInputs.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.exe
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.pdb
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe.config
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.pdb
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csprojAssemblyReference.cache
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyCustomer.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fAddCustomer.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fManager.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fLogin.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyProduct.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fRegister.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.Properties.Resources.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.GenerateResource.cache
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.CoreCompileInputs.cache
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.exe
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.pdb
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyContract.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyRentContract.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyRentProduct.resources
+C:\Users\quang chinh\Downloads\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyStaff.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csprojAssemblyReference.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyContract.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyCustomer.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fAddCustomer.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fManager.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fLogin.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyProduct.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyRentContract.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyRentProduct.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fModifyStaff.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.fRegister.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.Properties.Resources.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.GenerateResource.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.csproj.CoreCompileInputs.cache
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.exe
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Debug\QlyBDS.pdb
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe.config
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.exe
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\bin\Debug\QlyBDS.pdb
