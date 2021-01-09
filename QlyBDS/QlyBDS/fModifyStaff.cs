@@ -133,7 +133,9 @@ namespace QlyBDS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tool.ClearGroup(this.Controls);
+            this.tool.ClearGroup(this.Controls);
+            cmbChiNhanh.SelectedIndex = -1;
+            cmbGioiTinh.SelectedIndex = -1;
         }
 
         private void txtName_KeyUp(object sender, KeyEventArgs e)
@@ -181,7 +183,8 @@ namespace QlyBDS
             }
             catch
             {
-                this.tool.ClearGroup(this.Controls);
+                EventArgs newe = new EventArgs();
+                button3_Click(sender, newe);
             }
         }
 

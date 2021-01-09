@@ -4,7 +4,6 @@ C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\bin\Release\QlyBDS.pdb
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.csprojAssemblyReference.cache
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fModifyContract.resources
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fModifyCustomer.resources
-C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fAddCustomer.resources
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fLogin.resources
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fModifyProduct.resources
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fModifyRentContract.resources
@@ -17,3 +16,4 @@ C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.csproj.C
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.exe
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.pdb
 C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fManager.resources
+C:\Users\MrTrinh\Desktop\QlyBDS\QlyBDS\QlyBDS\QlyBDS\obj\Release\QlyBDS.fModifyOwners.resources

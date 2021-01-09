@@ -59,12 +59,6 @@
     <Compile Include="fModifyCustomer.Designer.cs">
       <DependentUpon>fModifyCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="fModifyOwner.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fModifyOwner.Designer.cs">
-      <DependentUpon>fModifyOwner.cs</DependentUpon>
-    </Compile>
     <Compile Include="fManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +70,12 @@
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fModifyOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fModifyOwners.Designer.cs">
+      <DependentUpon>fModifyOwners.cs</DependentUpon>
     </Compile>
     <Compile Include="fModifyProduct.cs">
       <SubType>Form</SubType>
@@ -116,14 +116,14 @@
     <EmbeddedResource Include="fModifyCustomer.resx">
       <DependentUpon>fModifyCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fModifyOwner.resx">
-      <DependentUpon>fModifyOwner.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fManager.resx">
       <DependentUpon>fManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fModifyOwners.resx">
+      <DependentUpon>fModifyOwners.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fModifyProduct.resx">
       <DependentUpon>fModifyProduct.cs</DependentUpon>
