@@ -76,7 +76,6 @@ namespace QlyBDS
         private void btnXoa_Click(object sender, EventArgs e)
         {
             this.tool.ClearGroup(this.Controls);
-            cmbLoaiCN.SelectedIndex = -1;
         }
 
         private void txtMaCN_KeyUp(object sender, KeyEventArgs e)
@@ -94,6 +93,7 @@ namespace QlyBDS
             if (tool.CheckInput(idcn) == false)
             {
                 MessageBox.Show("Mã là chuỗi số", "Cảnh báo");
+                this.tool.ClearGroup(this.Controls);
                 return;
             }
             try
@@ -116,12 +116,15 @@ namespace QlyBDS
                 else if(input[3] == "2")
                 {
                     cmbLoaiCN.Text = "Doanh Nghiệp";
-                }    
+                }
+                else
+                {
+                    cmbLoaiCN.Text = "";
+                }
             }
             catch
             {
                 this.tool.ClearGroup(this.Controls);
-                cmbLoaiCN.SelectedIndex = -1;
             }
         }
     }

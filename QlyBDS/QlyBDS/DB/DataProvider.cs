@@ -18,7 +18,7 @@ namespace QlyBDS.DAO
         // table nhân viên
         public string[] item2 = { "IDNHANVIEN", "ID_CHINHANH", "TENNHANVIEN", "SDT", "GIOITINH", "NGAYSINH2", "LUONG", "DIACHI" };
         // connect sql
-        public string connStr = @"Data Source=DESKTOP-9MRAN9G\SQLEXPRESS;Initial Catalog=QLBN1;Integrated Security=True";
+        public string connStr = @"Data Source=DESKTOP-9MRAN9G\SQLEXPRESS;Initial Catalog=QLBDS;Integrated Security=True";
 
         public SqlCommand com;
         public SqlDataReader read;

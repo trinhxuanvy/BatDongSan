@@ -30,47 +30,51 @@ namespace QlyBDS
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtGiaThue = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dpNgayHetHan = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dpNgayDang = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtKV = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTT = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbSoPhong = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDuong = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtQuan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbChiNhanh = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMaCN = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cmbLoaiNha = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.txtMaNha = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -85,12 +89,14 @@ namespace QlyBDS
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.panel14);
+            this.panel1.Controls.Add(this.btnXoa);
+            this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.panel15);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.panel6);
@@ -109,42 +115,44 @@ namespace QlyBDS
             this.panel1.Size = new System.Drawing.Size(964, 573);
             this.panel1.TabIndex = 4;
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(874, 530);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Hủy";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(874, 530);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 34);
+            this.btnXoa.TabIndex = 16;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button2
+            // btnLuu
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(784, 530);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Lưu";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(793, 530);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 34);
+            this.btnLuu.TabIndex = 15;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.textBox13);
+            this.panel15.Controls.Add(this.txtGiaThue);
             this.panel15.Controls.Add(this.label14);
-            this.panel15.Location = new System.Drawing.Point(484, 443);
+            this.panel15.Location = new System.Drawing.Point(484, 447);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(475, 65);
-            this.panel15.TabIndex = 8;
+            this.panel15.TabIndex = 14;
             // 
-            // textBox13
+            // txtGiaThue
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(112, 20);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(353, 26);
-            this.textBox13.TabIndex = 4;
+            this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaThue.Location = new System.Drawing.Point(112, 20);
+            this.txtGiaThue.Name = "txtGiaThue";
+            this.txtGiaThue.Size = new System.Drawing.Size(353, 26);
+            this.txtGiaThue.TabIndex = 4;
             // 
             // label14
             // 
@@ -158,20 +166,21 @@ namespace QlyBDS
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.dateTimePicker2);
+            this.panel13.Controls.Add(this.dpNgayHetHan);
             this.panel13.Controls.Add(this.label12);
-            this.panel13.Location = new System.Drawing.Point(484, 372);
+            this.panel13.Location = new System.Drawing.Point(484, 376);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(475, 65);
-            this.panel13.TabIndex = 7;
+            this.panel13.TabIndex = 13;
             // 
-            // dateTimePicker2
+            // dpNgayHetHan
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(112, 24);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(353, 22);
-            this.dateTimePicker2.TabIndex = 10;
+            this.dpNgayHetHan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpNgayHetHan.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpNgayHetHan.Location = new System.Drawing.Point(112, 24);
+            this.dpNgayHetHan.Name = "dpNgayHetHan";
+            this.dpNgayHetHan.Size = new System.Drawing.Size(353, 22);
+            this.dpNgayHetHan.TabIndex = 10;
             // 
             // label12
             // 
@@ -185,20 +194,21 @@ namespace QlyBDS
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.dateTimePicker1);
+            this.panel6.Controls.Add(this.dpNgayDang);
             this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(3, 372);
+            this.panel6.Location = new System.Drawing.Point(3, 447);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(475, 65);
-            this.panel6.TabIndex = 6;
+            this.panel6.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // dpNgayDang
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(112, 24);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(353, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dpNgayDang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpNgayDang.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dpNgayDang.Location = new System.Drawing.Point(112, 24);
+            this.dpNgayDang.Name = "dpNgayDang";
+            this.dpNgayDang.Size = new System.Drawing.Size(353, 22);
+            this.dpNgayDang.TabIndex = 9;
             // 
             // label11
             // 
@@ -212,20 +222,20 @@ namespace QlyBDS
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.txtTP);
             this.panel7.Controls.Add(this.label5);
-            this.panel7.Location = new System.Drawing.Point(484, 159);
+            this.panel7.Location = new System.Drawing.Point(484, 155);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(475, 65);
-            this.panel7.TabIndex = 3;
+            this.panel7.Size = new System.Drawing.Size(475, 69);
+            this.panel7.TabIndex = 10;
             // 
-            // textBox4
+            // txtTP
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(112, 20);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(353, 26);
-            this.textBox4.TabIndex = 4;
+            this.txtTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTP.Location = new System.Drawing.Point(112, 20);
+            this.txtTP.Name = "txtTP";
+            this.txtTP.Size = new System.Drawing.Size(353, 26);
+            this.txtTP.TabIndex = 4;
             // 
             // label5
             // 
@@ -239,20 +249,20 @@ namespace QlyBDS
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Controls.Add(this.txtKV);
             this.panel8.Controls.Add(this.label6);
             this.panel8.Location = new System.Drawing.Point(484, 230);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(475, 69);
-            this.panel8.TabIndex = 2;
+            this.panel8.TabIndex = 11;
             // 
-            // textBox5
+            // txtKV
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(112, 20);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(353, 26);
-            this.textBox5.TabIndex = 3;
+            this.txtKV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKV.Location = new System.Drawing.Point(112, 20);
+            this.txtKV.Name = "txtKV";
+            this.txtKV.Size = new System.Drawing.Size(353, 26);
+            this.txtKV.TabIndex = 3;
             // 
             // label6
             // 
@@ -266,21 +276,21 @@ namespace QlyBDS
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.comboBox1);
+            this.panel12.Controls.Add(this.cmbTT);
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(484, 301);
+            this.panel12.Location = new System.Drawing.Point(484, 305);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(475, 65);
-            this.panel12.TabIndex = 6;
+            this.panel12.TabIndex = 12;
             // 
-            // comboBox1
+            // cmbTT
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(353, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cmbTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTT.FormattingEnabled = true;
+            this.cmbTT.Location = new System.Drawing.Point(112, 20);
+            this.cmbTT.Name = "cmbTT";
+            this.cmbTT.Size = new System.Drawing.Size(353, 24);
+            this.cmbTT.TabIndex = 1;
             // 
             // label10
             // 
@@ -294,21 +304,21 @@ namespace QlyBDS
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.comboBox3);
+            this.panel11.Controls.Add(this.cmbSoPhong);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(3, 301);
+            this.panel11.Location = new System.Drawing.Point(3, 376);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(475, 65);
-            this.panel11.TabIndex = 5;
+            this.panel11.TabIndex = 6;
             // 
-            // comboBox3
+            // cmbSoPhong
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(112, 20);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(353, 24);
-            this.comboBox3.TabIndex = 3;
+            this.cmbSoPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSoPhong.FormattingEnabled = true;
+            this.cmbSoPhong.Location = new System.Drawing.Point(112, 20);
+            this.cmbSoPhong.Name = "cmbSoPhong";
+            this.cmbSoPhong.Size = new System.Drawing.Size(353, 24);
+            this.cmbSoPhong.TabIndex = 3;
             // 
             // label9
             // 
@@ -322,20 +332,20 @@ namespace QlyBDS
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox7);
+            this.panel10.Controls.Add(this.txtDuong);
             this.panel10.Controls.Add(this.label8);
             this.panel10.Location = new System.Drawing.Point(484, 80);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(475, 69);
-            this.panel10.TabIndex = 1;
+            this.panel10.TabIndex = 9;
             // 
-            // textBox7
+            // txtDuong
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(112, 20);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(353, 26);
-            this.textBox7.TabIndex = 1;
+            this.txtDuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDuong.Location = new System.Drawing.Point(112, 20);
+            this.txtDuong.Name = "txtDuong";
+            this.txtDuong.Size = new System.Drawing.Size(353, 26);
+            this.txtDuong.TabIndex = 1;
             // 
             // label8
             // 
@@ -349,20 +359,20 @@ namespace QlyBDS
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.textBox6);
+            this.panel9.Controls.Add(this.txtQuan);
             this.panel9.Controls.Add(this.label7);
             this.panel9.Location = new System.Drawing.Point(484, 5);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(475, 69);
-            this.panel9.TabIndex = 2;
+            this.panel9.TabIndex = 8;
             // 
-            // textBox6
+            // txtQuan
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(112, 20);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(353, 26);
-            this.textBox6.TabIndex = 2;
+            this.txtQuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQuan.Location = new System.Drawing.Point(112, 20);
+            this.txtQuan.Name = "txtQuan";
+            this.txtQuan.Size = new System.Drawing.Size(353, 26);
+            this.txtQuan.TabIndex = 2;
             // 
             // label7
             // 
@@ -376,21 +386,21 @@ namespace QlyBDS
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.comboBox2);
+            this.panel5.Controls.Add(this.cmbChiNhanh);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(3, 230);
+            this.panel5.Location = new System.Drawing.Point(3, 305);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(475, 65);
-            this.panel5.TabIndex = 3;
+            this.panel5.TabIndex = 5;
             // 
-            // comboBox2
+            // cmbChiNhanh
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(112, 20);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(353, 24);
-            this.comboBox2.TabIndex = 2;
+            this.cmbChiNhanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbChiNhanh.FormattingEnabled = true;
+            this.cmbChiNhanh.Location = new System.Drawing.Point(112, 20);
+            this.cmbChiNhanh.Name = "cmbChiNhanh";
+            this.cmbChiNhanh.Size = new System.Drawing.Size(353, 24);
+            this.cmbChiNhanh.TabIndex = 2;
             // 
             // label4
             // 
@@ -404,20 +414,20 @@ namespace QlyBDS
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.txtMaCN);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(3, 155);
+            this.panel4.Location = new System.Drawing.Point(3, 230);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(475, 69);
-            this.panel4.TabIndex = 2;
+            this.panel4.TabIndex = 4;
             // 
-            // textBox2
+            // txtMaCN
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(112, 20);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(353, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtMaCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaCN.Location = new System.Drawing.Point(112, 20);
+            this.txtMaCN.Name = "txtMaCN";
+            this.txtMaCN.Size = new System.Drawing.Size(353, 26);
+            this.txtMaCN.TabIndex = 3;
             // 
             // label3
             // 
@@ -431,21 +441,21 @@ namespace QlyBDS
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.comboBox4);
+            this.panel3.Controls.Add(this.cmbLoaiNha);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(3, 80);
+            this.panel3.Location = new System.Drawing.Point(3, 155);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(475, 69);
-            this.panel3.TabIndex = 2;
+            this.panel3.TabIndex = 3;
             // 
-            // comboBox4
+            // cmbLoaiNha
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(112, 24);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(353, 24);
-            this.comboBox4.TabIndex = 3;
+            this.cmbLoaiNha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbLoaiNha.FormattingEnabled = true;
+            this.cmbLoaiNha.Location = new System.Drawing.Point(112, 24);
+            this.cmbLoaiNha.Name = "cmbLoaiNha";
+            this.cmbLoaiNha.Size = new System.Drawing.Size(353, 24);
+            this.cmbLoaiNha.TabIndex = 3;
             // 
             // label2
             // 
@@ -459,20 +469,20 @@ namespace QlyBDS
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txtName);
+            this.panel2.Controls.Add(this.txtMaNV);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 5);
+            this.panel2.Location = new System.Drawing.Point(3, 80);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(475, 69);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 2;
             // 
-            // txtName
+            // txtMaNV
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(112, 20);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(353, 26);
-            this.txtName.TabIndex = 1;
+            this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.Location = new System.Drawing.Point(112, 20);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(353, 26);
+            this.txtMaNV.TabIndex = 1;
             // 
             // label1
             // 
@@ -484,6 +494,45 @@ namespace QlyBDS
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã nhân viên:";
             // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.label15);
+            this.panel14.Controls.Add(this.txtMaNha);
+            this.panel14.Controls.Add(this.label13);
+            this.panel14.Location = new System.Drawing.Point(3, 5);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(475, 69);
+            this.panel14.TabIndex = 1;
+            // 
+            // txtMaNha
+            // 
+            this.txtMaNha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNha.Location = new System.Drawing.Point(112, 20);
+            this.txtMaNha.Name = "txtMaNha";
+            this.txtMaNha.Size = new System.Drawing.Size(353, 26);
+            this.txtMaNha.TabIndex = 1;
+            this.txtMaNha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaNha_KeyUp);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(3, 24);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(66, 19);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Mã nhà:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(112, 53);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(169, 12);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Nhập mã để Update hoặc trống để Insert";
+            // 
             // fModifyRentProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -491,7 +540,7 @@ namespace QlyBDS
             this.ClientSize = new System.Drawing.Size(974, 577);
             this.Controls.Add(this.panel1);
             this.Name = "fModifyRentProduct";
-            this.Text = "fModifyRentProduct";
+            this.Text = "Nhà Thuê";
             this.Load += new System.EventHandler(this.fModifyRentProduct_Load);
             this.panel1.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
@@ -520,6 +569,8 @@ namespace QlyBDS
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -527,46 +578,50 @@ namespace QlyBDS
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtGiaThue;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dpNgayHetHan;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dpNgayDang;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTP;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtKV;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTT;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbSoPhong;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDuong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtQuan;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbChiNhanh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtMaCN;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cmbLoaiNha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.TextBox txtMaNha;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
     }
 }

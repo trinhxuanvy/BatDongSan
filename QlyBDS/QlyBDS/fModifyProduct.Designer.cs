@@ -30,9 +30,16 @@ namespace QlyBDS
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.txtGiaThue = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.txtGiaBan = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtMaNha = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -74,14 +81,9 @@ namespace QlyBDS
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtMaNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.txtGiaBan = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.txtGiaThue = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -96,8 +98,6 @@ namespace QlyBDS
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,6 +125,60 @@ namespace QlyBDS
             this.panel1.Size = new System.Drawing.Size(964, 647);
             this.panel1.TabIndex = 3;
             // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.txtGiaThue);
+            this.panel17.Controls.Add(this.label17);
+            this.panel17.Location = new System.Drawing.Point(484, 518);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(475, 65);
+            this.panel17.TabIndex = 17;
+            // 
+            // txtGiaThue
+            // 
+            this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaThue.Location = new System.Drawing.Point(112, 20);
+            this.txtGiaThue.Name = "txtGiaThue";
+            this.txtGiaThue.Size = new System.Drawing.Size(353, 26);
+            this.txtGiaThue.TabIndex = 4;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(11, 24);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(71, 19);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Giá thuê:";
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.txtGiaBan);
+            this.panel16.Controls.Add(this.label15);
+            this.panel16.Location = new System.Drawing.Point(484, 447);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(475, 65);
+            this.panel16.TabIndex = 16;
+            // 
+            // txtGiaBan
+            // 
+            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaBan.Location = new System.Drawing.Point(112, 20);
+            this.txtGiaBan.Name = "txtGiaBan";
+            this.txtGiaBan.Size = new System.Drawing.Size(353, 26);
+            this.txtGiaBan.TabIndex = 4;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(11, 24);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(66, 19);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Giá bán:";
+            // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,6 +188,7 @@ namespace QlyBDS
             this.btnXoa.TabIndex = 19;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnLuu
             // 
@@ -156,6 +211,16 @@ namespace QlyBDS
             this.panel15.Size = new System.Drawing.Size(475, 69);
             this.panel15.TabIndex = 1;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(112, 53);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(169, 12);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "Nhập mã để Update hoặc trống để Insert";
+            // 
             // txtMaNha
             // 
             this.txtMaNha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,6 +228,7 @@ namespace QlyBDS
             this.txtMaNha.Name = "txtMaNha";
             this.txtMaNha.Size = new System.Drawing.Size(353, 26);
             this.txtMaNha.TabIndex = 4;
+            this.txtMaNha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtMaNha_KeyUp);
             // 
             // label14
             // 
@@ -533,70 +599,6 @@ namespace QlyBDS
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã nhân viên:";
             // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.txtGiaBan);
-            this.panel16.Controls.Add(this.label15);
-            this.panel16.Location = new System.Drawing.Point(484, 447);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(475, 65);
-            this.panel16.TabIndex = 16;
-            // 
-            // txtGiaBan
-            // 
-            this.txtGiaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaBan.Location = new System.Drawing.Point(112, 20);
-            this.txtGiaBan.Name = "txtGiaBan";
-            this.txtGiaBan.Size = new System.Drawing.Size(353, 26);
-            this.txtGiaBan.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 24);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 19);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Giá bán:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(112, 53);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(169, 12);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "Nhập mã để Update hoặc trống để Insert";
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.txtGiaThue);
-            this.panel17.Controls.Add(this.label17);
-            this.panel17.Location = new System.Drawing.Point(484, 518);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(475, 65);
-            this.panel17.TabIndex = 17;
-            // 
-            // txtGiaThue
-            // 
-            this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGiaThue.Location = new System.Drawing.Point(112, 20);
-            this.txtGiaThue.Name = "txtGiaThue";
-            this.txtGiaThue.Size = new System.Drawing.Size(353, 26);
-            this.txtGiaThue.TabIndex = 4;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(11, 24);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 19);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Giá thuê:";
-            // 
             // fModifyProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,6 +609,10 @@ namespace QlyBDS
             this.Text = "Nhà Bán";
             this.Load += new System.EventHandler(this.fModifyProduct_Load);
             this.panel1.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -635,10 +641,6 @@ namespace QlyBDS
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -75,24 +75,17 @@ namespace QlyBDS
 
         private void fManager_Load_1(object sender, EventArgs e)
         {
-            query = "select * from ChuNha";
-            dgvKH_CN.DataSource = data.ExcuteQuery(query);
-            query = "select * from NhaBan";
-            dgvSP_NB.DataSource = data.ExcuteQuery(query);
-            query = "select * from NhaThue";
-            dgvSP_NT.DataSource = data.ExcuteQuery(query);
-            query = "select * from NhaBan where IDNhanVien = null";
-            dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
-            query = "select * from NhaThue where IDNhanVien = null";
-            dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
-            query = "select * from HopDongMua";
-            dgvQLGD_HDM.DataSource = data.ExcuteQuery(query);
-            query = "select * from HopDongThue";
-            dgvQLGD_HDT.DataSource = data.ExcuteQuery(query);
-            query = "select * from NhanVien";
-            dgvNV.DataSource = data.ExcuteQuery(query);
-            query = "select * from KhachHang";
-            dgvKH_MT.DataSource = data.ExcuteQuery(query);
+            dgvKH_CN.DataSource = data.ExcuteQuery("select * from ChuNha");
+            dgvSP_NB.DataSource = data.ExcuteQuery("select * from NhaBan");
+            dgvSP_NT.DataSource = data.ExcuteQuery("select * from NhaThue");
+            dgvSP_NCD_NB.DataSource = data.ExcuteQuery("select * from NhaBan where IDNhanVien is null");
+            dgvSP_NCD_NT.DataSource = data.ExcuteQuery("select * from NhaThue where IDNhanVien is null");
+            dgvSP_NB.DataSource = data.ExcuteQuery("select * from NhaBan where IDNhanVien is not null");
+            dgvSP_NT.DataSource = data.ExcuteQuery("select * from NhaThue where IDNhanVien is not null");
+            dgvQLGD_HDM.DataSource = data.ExcuteQuery("select * from HopDongMua");
+            dgvQLGD_HDT.DataSource = data.ExcuteQuery("select * from HopDongThue");
+            dgvNV.DataSource = data.ExcuteQuery("select * from NhanVien");
+            dgvKH_MT.DataSource = data.ExcuteQuery("select * from KhachHang");
             cmbNV_TimKiem.DataSource = GetList("select * from NhanVien");
             cmbQLGD_TimKiem.DataSource = GetList("select * from HopDongMua");
             cmbQLGD_HDT.DataSource = GetList("select * from HopDongThue");
@@ -285,11 +278,11 @@ namespace QlyBDS
             {
                 if (type == "NGAYDANG" || type == "NGAYHETHAN")
                 {
-                    query = "select * from NhaThue where " + type + " = '" + input + "'";
+                    query = "select * from NhaThue where " + type + " = '" + input + "' and IDNhanVien is not null";
                 }
                 else
                 {
-                    query = "select * from NhaThue where " + type + " like '%' + dbo.NonUnicode(N'" + input + "') + '%'";
+                    query = "select * from NhaThue where " + type + " like '%' + dbo.NonUnicode(N'" + input + "') + '%' and IDNhanVien is not null";
                 }
                 try
                 {
@@ -302,7 +295,7 @@ namespace QlyBDS
             }
             else
             {
-                query = "select * from NhaThue";
+                query = "select * from NhaThue where IDNhanVien is not null";
                 dgvSP_NT.DataSource = data.ExcuteQuery(query);
             }
         }
@@ -314,11 +307,11 @@ namespace QlyBDS
             {
                 if (type == "NGAYDANG" || type == "NGAYHETHAN")
                 {
-                    query = "select * from NhaBan where " + type + " = '" + input + "'";
+                    query = "select * from NhaBan where " + type + " = '" + input + "' and IDNhanVien is not null";
                 }
                 else
                 {
-                    query = "select * from NhaBan where " + type + " like '%' + dbo.NonUnicode(N'" + input + "') + '%'";
+                    query = "select * from NhaBan where " + type + " like '%' + dbo.NonUnicode(N'" + input + "') + '%' and IDNhanVien is not null";
                 }
                 try
                 {
@@ -331,7 +324,7 @@ namespace QlyBDS
             }
             else
             {
-                query = "select * from NhaBan";
+                query = "select * from NhaBan where IDNhanVien is not null";
                 dgvSP_NB.DataSource = data.ExcuteQuery(query);
             }
         }
@@ -355,7 +348,16 @@ namespace QlyBDS
             {
                 query = "select * from NhaThue";
             }
-            cmbSP_NCD_TimKiem_2.DataSource = GetList(query);
+            List<string> temp = new List<string>();
+            temp = GetList(query);
+            for(int i = 0; i < temp.Count; i++)
+            {
+                if(temp[i] == "IDNHANVIEN")
+                {
+                    temp.RemoveAt(i);
+                }    
+            }    
+            cmbSP_NCD_TimKiem_2.DataSource = temp;
         }
 
         private void btnSP_NCD_TimKiem_Click(object sender, EventArgs e)
@@ -367,11 +369,11 @@ namespace QlyBDS
                 {
                     if (type2 == "NGAYDANG" || type2 == "NGAYHETHAN")
                     {
-                        query = "select * from NhaBan where " + type2 + " = '" + input + "'";
+                        query = "select * from NhaBan where " + type2 + " = '" + input + "' and IDNhanVien is null";
                     }
                     else
                     {
-                        query = "select * from NhaBan where " + type2 + " like '%' + dbo.NonUnicode(N'" + input + "') + '%'";
+                        query = "select * from NhaBan where " + type2 + " like '%' + dbo.NonUnicode(N'" + input + "') + '%' and IDNhanVien is null";
                     }
                     try
                     {
@@ -386,11 +388,11 @@ namespace QlyBDS
                 {
                     if (type2 == "NGAYDANG" || type2 == "NGAYHETHAN")
                     {
-                        query = "select * from NhaThue where " + type2 + " = '" + input + "'";
+                        query = "select * from NhaThue where " + type2 + " = '" + input + "' and IDNhanVien is null";
                     }
                     else
                     {
-                        query = "select * from NhaThue where " + type2 + " like '%' + dbo.NonUnicode(N'" + input + "') + '%'";
+                        query = "select * from NhaThue where " + type2 + " like '%' + dbo.NonUnicode(N'" + input + "') + '%' and IDNhanVien is null";
                     }
                     try
                     {
@@ -406,12 +408,12 @@ namespace QlyBDS
             {
                 if(type1 == "Nhà Bán")
                 {
-                    query = "select * from NhaBan";
+                    query = "select * from NhaBan where IDNhanVien is null";
                     dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
                 }
                 else
                 {
-                    query = "select * from NhaThue";
+                    query = "select * from NhaThue where IDNhanVien is null";
                     dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
                 }             
             }
@@ -445,6 +447,7 @@ namespace QlyBDS
                     }
                     catch
                     {
+                        MessageBox.Show("Không thành công", "Thông báo");
                         return;
                     }
                 }
@@ -457,9 +460,10 @@ namespace QlyBDS
                     }
                     catch
                     {
+                        MessageBox.Show("Không thành công", "Thông báo");
                         return;
                     }
-                }
+                } 
             }
             else
             {
@@ -474,58 +478,12 @@ namespace QlyBDS
                     dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
                 }
             }
+            fManager_Load_1(sender, e);
         }
 
         private void txtSP_NCD_MaNV_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void txtSP_NCD_MaNha_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            string type1 = cmbSP_NCD_Duyet.Text, idnha = txtSP_NCD_MaNha.Text;
-            if (idnha != "")
-            {
-                MessageBox.Show(idnha);
-                if (type1 == "Nhà Bán")
-                {
-                    query = "select * NhaBan where IDNHABAN like '%' + '" + idnha + "' + '%' and IDNHANVIEN = ''";
-                    try
-                    {
-                        MessageBox.Show(query);
-                        dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-                else if(type1 == "Nhà Thuê")
-                {
-                    query = "select * NhaThue where IDNHATHUE like '%' + '" + idnha + "' + '%' and IDNHANVIEN = ''";
-                    try
-                    {
-                        dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
-                    }
-                    catch
-                    {
-                        return;
-                    }
-                }
-            }
-            else
-            {
-                if (type1 == "Nhà Bán")
-                {
-                    query = "select * from NhaBan";
-                    dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
-                }
-                else if(type1 == "Nhà Thuê")
-                {
-                    query = "select * from NhaThue";
-                    dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
-                }
-            }
         }
 
         private void btnKH_CN_Sua_Click(object sender, EventArgs e)
@@ -607,6 +565,179 @@ namespace QlyBDS
                 query = "select * from KhachHang";
                 dgvKH_MT.DataSource = data.ExcuteQuery(query);
             }
+        }
+
+        private void dgvKH_CN_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvKH_CN.CurrentRow.Index;
+            string val = dgvKH_CN.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvKH_CN_LSGD_NB.DataSource = data.ExcuteQuery("exec SelectHDMB 1, " + val);
+                dgvKH_CN_LSGD_NT.DataSource = data.ExcuteQuery("exec SelectHDMB 2, " + val);
+            }
+            catch
+            {
+                return;
+            }          
+        }
+
+        private void dgvKH_MT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvKH_MT.CurrentRow.Index;
+            string val = dgvKH_MT.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvKH_CN_LSGD_NB.DataSource = data.ExcuteQuery("exec SelectHDMBMT 1, " + val);
+                dgvKH_CN_LSGD_NT.DataSource = data.ExcuteQuery("exec SelectHDMBMT 2, " + val);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void txtSP_NCD_MaNha_KeyUp(object sender, KeyEventArgs e)
+        {
+            string type1 = cmbSP_NCD_Duyet.Text, idnha = "";
+            if (txtSP_NCD_MaNha.Text != "" && type1 != "")
+            {
+                idnha = txtSP_NCD_MaNha.Text;
+                if (type1 == "Nhà Bán")
+                {
+                    query = "select * from NhaBan where IDNHABAN like '%' + '" + idnha + "' + '%' and IDNHANVIEN is null";
+                    try
+                    {
+                        dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
+                        if(dgvSP_NCD_NB.Rows.Count == 1)
+                        {
+                            txtSP_NCD_MaNha.Text = "";
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+                else if (type1 == "Nhà Thuê")
+                {
+                    query = "select * from NhaThue where IDNHATHUE like '%' + '" + idnha + "' + '%' and IDNHANVIEN is null";
+                    try
+                    {
+                        dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
+                        if (dgvSP_NCD_NT.Rows.Count == 1)
+                        {
+                            txtSP_NCD_MaNha.Text = "";
+                        }
+                    }
+                    catch
+                    {
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                if (type1 == "Nhà Bán")
+                {
+                    query = "select * from NhaBan where IDNhanVien is null";
+                    dgvSP_NCD_NB.DataSource = data.ExcuteQuery(query);
+                }
+                else if (type1 == "Nhà Thuê")
+                {
+                    query = "select * from NhaThue where IDNhanVien is null";
+                    dgvSP_NCD_NT.DataSource = data.ExcuteQuery(query);
+                }
+            }
+        }
+
+        private void dgvSP_NCD_NB_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvSP_NCD_NB.CurrentRow.Index;
+            string val = dgvSP_NCD_NB.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvSP_LSGD.DataSource = data.ExcuteQuery("exec SelectHDNBT 1, " + val);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void dgvSP_NCD_NT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvSP_NCD_NT.CurrentRow.Index;
+            string val = dgvSP_NCD_NT.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvSP_LSGD.DataSource = data.ExcuteQuery("exec SelectHDNBT 2, " + val);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void dgvSP_NB_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvSP_NB.CurrentRow.Index;
+            string val = dgvSP_NB.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvSP_LSGD.DataSource = data.ExcuteQuery("exec SelectHDNBT 1, " + val);
+                dgvSP_LSSH.DataSource = data.ExcuteQuery("exec SelectKH 1, " + val);
+                dgvSP_NVQL.DataSource = data.ExcuteQuery("exec SelectNV 1, " + val);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void dgvSP_NT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dgvSP_NT.CurrentRow.Index;
+            string val = dgvSP_NT.Rows[row].Cells[0].Value.ToString();
+            try
+            {
+                dgvSP_LSGD.DataSource = data.ExcuteQuery("exec SelectHDNBT 2, " + val);
+                dgvSP_LSSH.DataSource = data.ExcuteQuery("exec SelectKH 2, " + val);
+                dgvSP_NVQL.DataSource = data.ExcuteQuery("exec SelectNV 2, " + val);
+                dgvSP_NX.DataSource = data.ExcuteQuery("select * from NhanXetNhaThue where IDNhaThue = " + val);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private void txtSP_NCD_MaNV_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == 13)
+            {
+                EventArgs newe = new EventArgs();
+                btnDuyet_Click(sender, newe);
+            }    
+        }
+
+        private void btnSP_NB_Sua_Click(object sender, EventArgs e)
+        {
+            btnSP_NB_Them_Click(sender, e);
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            fModifyRentProduct fmp = new fModifyRentProduct();
+            this.Hide();
+            fmp.ShowDialog();
+            fManager_Load_1(sender, e);
+            this.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            button16_Click(sender, e);
         }
     }
 }

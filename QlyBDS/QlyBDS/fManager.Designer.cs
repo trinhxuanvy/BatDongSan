@@ -32,7 +32,10 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dgvKH_CN_LSGD_NT = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvKH_CN_LSGD_NB = new System.Windows.Forms.DataGridView();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -57,13 +60,13 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.dgvSP_LSGD = new System.Windows.Forms.DataGridView();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.dgvSP_LSSH = new System.Windows.Forms.DataGridView();
             this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
+            this.dgvSP_NVQL = new System.Windows.Forms.DataGridView();
             this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
+            this.dgvSP_NX = new System.Windows.Forms.DataGridView();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -133,7 +136,10 @@
             this.tabPage1.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH_CN_LSGD_NT)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH_CN_LSGD_NB)).BeginInit();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabControl2.SuspendLayout();
@@ -146,13 +152,13 @@
             this.tabPage2.SuspendLayout();
             this.tabControl5.SuspendLayout();
             this.tabPage12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_LSGD)).BeginInit();
             this.tabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_LSSH)).BeginInit();
             this.tabPage14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_NVQL)).BeginInit();
             this.tabPage15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_NX)).BeginInit();
             this.tabControl4.SuspendLayout();
             this.tabPage10.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -215,7 +221,8 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.dataGridView5);
+            this.tabPage7.Controls.Add(this.groupBox4);
+            this.tabPage7.Controls.Add(this.groupBox3);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -224,13 +231,41 @@
             this.tabPage7.Text = "Lịch sử giao dịch";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // dataGridView5
+            // groupBox4
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(3, 6);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(1187, 266);
-            this.dataGridView5.TabIndex = 3;
+            this.groupBox4.Controls.Add(this.dgvKH_CN_LSGD_NT);
+            this.groupBox4.Location = new System.Drawing.Point(622, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(574, 266);
+            this.groupBox4.TabIndex = 6;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Nhà thuê";
+            // 
+            // dgvKH_CN_LSGD_NT
+            // 
+            this.dgvKH_CN_LSGD_NT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKH_CN_LSGD_NT.Location = new System.Drawing.Point(6, 19);
+            this.dgvKH_CN_LSGD_NT.Name = "dgvKH_CN_LSGD_NT";
+            this.dgvKH_CN_LSGD_NT.Size = new System.Drawing.Size(561, 241);
+            this.dgvKH_CN_LSGD_NT.TabIndex = 4;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dgvKH_CN_LSGD_NB);
+            this.groupBox3.Location = new System.Drawing.Point(-4, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(620, 266);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Nhà bán";
+            // 
+            // dgvKH_CN_LSGD_NB
+            // 
+            this.dgvKH_CN_LSGD_NB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKH_CN_LSGD_NB.Location = new System.Drawing.Point(6, 19);
+            this.dgvKH_CN_LSGD_NB.Name = "dgvKH_CN_LSGD_NB";
+            this.dgvKH_CN_LSGD_NB.Size = new System.Drawing.Size(608, 241);
+            this.dgvKH_CN_LSGD_NB.TabIndex = 4;
             // 
             // tabPage9
             // 
@@ -350,6 +385,7 @@
             this.dgvKH_CN.Name = "dgvKH_CN";
             this.dgvKH_CN.Size = new System.Drawing.Size(1187, 260);
             this.dgvKH_CN.TabIndex = 0;
+            this.dgvKH_CN.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKH_CN_CellClick);
             // 
             // tabPage6
             // 
@@ -440,6 +476,7 @@
             this.dgvKH_MT.Name = "dgvKH_MT";
             this.dgvKH_MT.Size = new System.Drawing.Size(1187, 260);
             this.dgvKH_MT.TabIndex = 1;
+            this.dgvKH_MT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKH_MT_CellClick);
             // 
             // tabPage2
             // 
@@ -467,7 +504,7 @@
             // 
             // tabPage12
             // 
-            this.tabPage12.Controls.Add(this.dataGridView7);
+            this.tabPage12.Controls.Add(this.dgvSP_LSGD);
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
@@ -476,17 +513,17 @@
             this.tabPage12.Text = "Lịch sử giao dịch";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // dataGridView7
+            // dgvSP_LSGD
             // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(3, 6);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(1186, 255);
-            this.dataGridView7.TabIndex = 3;
+            this.dgvSP_LSGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSP_LSGD.Location = new System.Drawing.Point(3, 6);
+            this.dgvSP_LSGD.Name = "dgvSP_LSGD";
+            this.dgvSP_LSGD.Size = new System.Drawing.Size(1186, 255);
+            this.dgvSP_LSGD.TabIndex = 3;
             // 
             // tabPage13
             // 
-            this.tabPage13.Controls.Add(this.dataGridView8);
+            this.tabPage13.Controls.Add(this.dgvSP_LSSH);
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
@@ -495,17 +532,17 @@
             this.tabPage13.Text = "Lịch sử sở hữu";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
-            // dataGridView8
+            // dgvSP_LSSH
             // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(2, 7);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(1187, 255);
-            this.dataGridView8.TabIndex = 4;
+            this.dgvSP_LSSH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSP_LSSH.Location = new System.Drawing.Point(2, 7);
+            this.dgvSP_LSSH.Name = "dgvSP_LSSH";
+            this.dgvSP_LSSH.Size = new System.Drawing.Size(1187, 255);
+            this.dgvSP_LSSH.TabIndex = 4;
             // 
             // tabPage14
             // 
-            this.tabPage14.Controls.Add(this.dataGridView9);
+            this.tabPage14.Controls.Add(this.dgvSP_NVQL);
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
@@ -514,17 +551,17 @@
             this.tabPage14.Text = "Nhân viên quản lý";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
-            // dataGridView9
+            // dgvSP_NVQL
             // 
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(6, 7);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(1183, 255);
-            this.dataGridView9.TabIndex = 5;
+            this.dgvSP_NVQL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSP_NVQL.Location = new System.Drawing.Point(6, 7);
+            this.dgvSP_NVQL.Name = "dgvSP_NVQL";
+            this.dgvSP_NVQL.Size = new System.Drawing.Size(1183, 255);
+            this.dgvSP_NVQL.TabIndex = 5;
             // 
             // tabPage15
             // 
-            this.tabPage15.Controls.Add(this.dataGridView13);
+            this.tabPage15.Controls.Add(this.dgvSP_NX);
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
@@ -533,13 +570,13 @@
             this.tabPage15.Text = "Nhận xét";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
-            // dataGridView13
+            // dgvSP_NX
             // 
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.Location = new System.Drawing.Point(3, 10);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.Size = new System.Drawing.Size(1186, 255);
-            this.dataGridView13.TabIndex = 6;
+            this.dgvSP_NX.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSP_NX.Location = new System.Drawing.Point(3, 10);
+            this.dgvSP_NX.Name = "dgvSP_NX";
+            this.dgvSP_NX.Size = new System.Drawing.Size(1186, 255);
+            this.dgvSP_NX.TabIndex = 6;
             // 
             // tabControl4
             // 
@@ -613,6 +650,7 @@
             this.btnSP_NB_Sua.TabIndex = 3;
             this.btnSP_NB_Sua.Text = "Sửa";
             this.btnSP_NB_Sua.UseVisualStyleBackColor = true;
+            this.btnSP_NB_Sua.Click += new System.EventHandler(this.btnSP_NB_Sua_Click);
             // 
             // button11
             // 
@@ -640,6 +678,7 @@
             this.dgvSP_NB.Name = "dgvSP_NB";
             this.dgvSP_NB.Size = new System.Drawing.Size(1187, 260);
             this.dgvSP_NB.TabIndex = 0;
+            this.dgvSP_NB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSP_NB_CellClick);
             // 
             // tabPage11
             // 
@@ -702,6 +741,7 @@
             this.button14.TabIndex = 3;
             this.button14.Text = "Sửa";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -720,6 +760,7 @@
             this.button16.TabIndex = 1;
             this.button16.Text = "Thêm";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // dgvSP_NT
             // 
@@ -728,6 +769,7 @@
             this.dgvSP_NT.Name = "dgvSP_NT";
             this.dgvSP_NT.Size = new System.Drawing.Size(1187, 260);
             this.dgvSP_NT.TabIndex = 1;
+            this.dgvSP_NT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSP_NT_CellClick);
             // 
             // tabPage8
             // 
@@ -759,6 +801,7 @@
             this.dgvSP_NCD_NT.Name = "dgvSP_NCD_NT";
             this.dgvSP_NCD_NT.Size = new System.Drawing.Size(576, 241);
             this.dgvSP_NCD_NT.TabIndex = 1;
+            this.dgvSP_NCD_NT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSP_NCD_NT_CellClick);
             // 
             // groupBox1
             // 
@@ -777,6 +820,7 @@
             this.dgvSP_NCD_NB.Name = "dgvSP_NCD_NB";
             this.dgvSP_NCD_NB.Size = new System.Drawing.Size(584, 241);
             this.dgvSP_NCD_NB.TabIndex = 0;
+            this.dgvSP_NCD_NB.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSP_NCD_NB_CellClick);
             // 
             // panel8
             // 
@@ -835,7 +879,7 @@
             this.txtSP_NCD_MaNha.Size = new System.Drawing.Size(80, 24);
             this.txtSP_NCD_MaNha.TabIndex = 2;
             this.txtSP_NCD_MaNha.TextChanged += new System.EventHandler(this.txtSP_NCD_MaNha_TextChanged);
-            this.txtSP_NCD_MaNha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSP_NCD_MaNha_KeyPress);
+            this.txtSP_NCD_MaNha.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtSP_NCD_MaNha_KeyUp);
             // 
             // label2
             // 
@@ -865,6 +909,7 @@
             this.txtSP_NCD_MaNV.Size = new System.Drawing.Size(94, 24);
             this.txtSP_NCD_MaNV.TabIndex = 3;
             this.txtSP_NCD_MaNV.TextChanged += new System.EventHandler(this.txtSP_NCD_MaNV_TextChanged);
+            this.txtSP_NCD_MaNV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSP_NCD_MaNV_KeyPress);
             // 
             // cmbSP_NCD_TimKiem_1
             // 
@@ -1212,7 +1257,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH_CN_LSGD_NT)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKH_CN_LSGD_NB)).EndInit();
             this.tabPage9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabControl2.ResumeLayout(false);
@@ -1227,13 +1275,13 @@
             this.tabPage2.ResumeLayout(false);
             this.tabControl5.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_LSGD)).EndInit();
             this.tabPage13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_LSSH)).EndInit();
             this.tabPage14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_NVQL)).EndInit();
             this.tabPage15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSP_NX)).EndInit();
             this.tabControl4.ResumeLayout(false);
             this.tabPage10.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -1274,7 +1322,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
@@ -1282,11 +1329,11 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabPage tabPage12;
-        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView dgvSP_LSGD;
         private System.Windows.Forms.TabPage tabPage13;
-        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridView dgvSP_LSSH;
         private System.Windows.Forms.TabPage tabPage14;
-        private System.Windows.Forms.DataGridView dataGridView9;
+        private System.Windows.Forms.DataGridView dgvSP_NVQL;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage11;
@@ -1304,7 +1351,7 @@
         private System.Windows.Forms.DataGridView dgvKH_MT;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.DataGridView dgvSP_NB;
-        private System.Windows.Forms.DataGridView dataGridView13;
+        private System.Windows.Forms.DataGridView dgvSP_NX;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cmbQLGD_TimKiem;
@@ -1371,5 +1418,9 @@
         private System.Windows.Forms.ComboBox cmbSP_NCD_TimKiem_2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbSP_NCD_Duyet;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.DataGridView dgvKH_CN_LSGD_NT;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dgvKH_CN_LSGD_NB;
     }
 }

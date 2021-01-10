@@ -27,7 +27,10 @@ namespace QlyBDS.DAO
                         ((CheckBox)c).Checked = false;
                         break;
                     case "ComboBox":
-                        ((ComboBox)c).SelectedIndex = 0;
+                        ((ComboBox)c).SelectedIndex = -1;
+                        break;
+                    case "RichTextBox":
+                        ((RichTextBox)c).Text = string.Empty;
                         break;
                     default:
                         break;

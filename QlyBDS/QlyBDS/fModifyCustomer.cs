@@ -47,6 +47,10 @@ namespace QlyBDS
             {
                 sdt = txtSDT.Text;
             }
+            if(rtxtYeuCau.Text != "")
+            {
+                yc = rtxtYeuCau.Text;
+            }
             if (txtMaKhach.Text == "")
             {
                 query = "exec InsertKhachHang N'" + ht + "', N'" + dc + "', '" + sdt + "', N'" + yc + "'";
@@ -92,6 +96,7 @@ namespace QlyBDS
             if (tool.CheckInput(idkh) == false)
             {
                 MessageBox.Show("Mã là chuỗi số", "Cảnh báo");
+                this.tool.ClearGroup(this.Controls);
                 return;
             }
             try

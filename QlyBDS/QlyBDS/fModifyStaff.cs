@@ -127,15 +127,13 @@ namespace QlyBDS
             {
                 cmbGioiTinh.Items.Add(gt[count++]);
             }
-            cmbChiNhanh.SelectedIndex = 0;
-            cmbGioiTinh.SelectedIndex = 0;
+            cmbChiNhanh.SelectedIndex = -1;
+            cmbGioiTinh.SelectedIndex = -1;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.tool.ClearGroup(this.Controls);
-            cmbChiNhanh.SelectedIndex = -1;
-            cmbGioiTinh.SelectedIndex = -1;
         }
 
         private void txtName_KeyUp(object sender, KeyEventArgs e)
@@ -148,6 +146,7 @@ namespace QlyBDS
             else
             {
                 tool.ClearGroup(this.Controls);
+                cmbGioiTinh.Text = "";
                 return;
             }
             if(tool.CheckInput(idnv) == false)
